@@ -1,5 +1,5 @@
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=Engin-Boot_alert-to-care-s3b4)
-[![GitHub license](https://img.shields.io/github/license/Engin-Boot/alert-to-care-s3b4)](https://github.com/Engin-Boot/alert-to-care-s3b4)
+[![GitHub issues](https://img.shields.io/github/issues/Engin-Boot/alert-to-care-s3b4)](https://github.com/Engin-Boot/alert-to-care-s3b4/issues)
 # Alert to Care
 
 This project implements a service that receives
