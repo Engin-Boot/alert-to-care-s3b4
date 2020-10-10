@@ -3,6 +3,7 @@
 ![Code Stlye ](https://img.shields.io/badge/code--style--check-enabled-green)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Engin-Boot/alert-to-care-s3b4)
 ![GitHub top language](https://img.shields.io/github/languages/top/Engin-Boot/alert-to-care-s3b4)
+![Codecov](https://img.shields.io/codecov/c/github/Engin-Boot/alert-to-care-s3b4?flag=unit_tests&token=d6a2738d-0cdb-4dcd-bd42-de5556bf33e7)
 
 # Alert to Care
 
