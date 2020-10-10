@@ -1,3 +1,4 @@
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=Engin-Boot_alert-to-care-s3b4)
 # Alert to Care
 
 This project implements a service that receives
