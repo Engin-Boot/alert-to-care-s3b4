@@ -4,7 +4,9 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-  
+defaults:
+  run:
+    working-directory: Source
 jobs:
   code-coverage:
     name: code coverage
