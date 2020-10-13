@@ -5,6 +5,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/Engin-Boot/alert-to-care-s3b4)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FEngin-Boot%2Falert-to-care-s3b4.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FEngin-Boot%2Falert-to-care-s3b4?ref=badge_shield)
 ![Build Run and Test](https://github.com/Engin-Boot/alert-to-care-s3b4/workflows/Build%20Run%20and%20Test/badge.svg)
+![Limit complexity](https://github.com/Engin-Boot/alert-to-care-s3b4/workflows/Limit%20complexity/badge.svg)
 
 # Alert to Care
 
