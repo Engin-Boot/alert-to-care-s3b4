@@ -1,9 +1,9 @@
 name: CodeCov code covergae
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 defaults:
   run:
     working-directory: Source
