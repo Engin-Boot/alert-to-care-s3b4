@@ -2,13 +2,15 @@ name: Build Run and Test
 
 on:
   push:
-    paths:
-      - Source
+    branches:
+      - main
    
   pull_request:
-    paths-ignore:
-    - '**.md'
-
+    branches:
+      - main
+defaults:
+  run:
+    working-directory: Source
 jobs:
   build:
 
