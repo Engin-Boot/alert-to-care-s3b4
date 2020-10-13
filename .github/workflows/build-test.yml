@@ -2,10 +2,9 @@ name: Build Run and Test
 
 on:
   push:
-    paths-ignore:
-    - '**.md'
-    - "Documentation/**"
-    - ".github/workflows/**"
+    paths:
+      - Source
+   
   pull_request:
     paths-ignore:
     - '**.md'
