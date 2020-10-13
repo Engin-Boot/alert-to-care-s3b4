@@ -5,7 +5,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/Engin-Boot/alert-to-care-s3b4)
 
 
-# Alert to Care:
+# Alert to Care
 
 This project implements a service that receives
 measurements from devices that monitor patients.
