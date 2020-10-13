@@ -1,11 +1,11 @@
-[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=Engin-Boot_alert-to-care-s3b4)
+﻿[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=Engin-Boot_alert-to-care-s3b4)
 [![GitHub issues](https://img.shields.io/github/issues/Engin-Boot/alert-to-care-s3b4)](https://github.com/Engin-Boot/alert-to-care-s3b4/issues)
 ![Code Stlye ](https://img.shields.io/badge/code--style--check-enabled-green)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Engin-Boot/alert-to-care-s3b4)
 ![GitHub top language](https://img.shields.io/github/languages/top/Engin-Boot/alert-to-care-s3b4)
 
 
-# Alert to Care
+# Alert to Care:
 
 This project implements a service that receives
 measurements from devices that monitor patients.
