@@ -4,7 +4,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Engin-Boot/alert-to-care-s3b4)
 ![GitHub top language](https://img.shields.io/github/languages/top/Engin-Boot/alert-to-care-s3b4)
 
-
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FEngin-Boot%2Falert-to-care-s3b4.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FEngin-Boot%2Falert-to-care-s3b4?ref=badge_large)
 # Alert to Care
 
 This project implements a service that receives
