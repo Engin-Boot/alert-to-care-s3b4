@@ -1,4 +1,4 @@
-It contains a source code of two micro services developed using Java. 
+It contains a source code of two sample micro services developed using Java. 
 
 To build the micro services, run the following command where parement POM is exist. 
 
