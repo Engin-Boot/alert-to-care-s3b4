@@ -3,8 +3,10 @@ name: "Analyze code with SonarCloud"
 on:
   push:
     branches:
-      - dev
-
+      - main
+defaults:
+  run:
+    working-directory: Source
 jobs:
   sonarCloudTrigger:
     name: SonarCloud Trigger
