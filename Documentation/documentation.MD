@@ -37,13 +37,15 @@ Once the main spring application (com.philips.alerttocare) has been run,Tomcat a
 
 ## APIs Created
 
-
+When posting values via the API's for the first time, follow the same order mentioned below
+ICUs -> BEDs -> MONITORING DEVICEs -> BED & DEVICE MAPPINGs -> PATIENTs
 
 ### ICU-Management API
 | HTTP Mehtod | API URL        | Description                                                                | Success Response                                 | Failure Response  |
 |-------------|----------------|----------------------------------------------------------------------------|--------------------------------------------------|-------------------|
 | GET        | "/icu-mgmt/icu"      |  Fetches list of all ICUs along with their status | 200 status code with "OK"    | -- |
 | POST        | "/icu-mgmt/icu"      |  This adds a new ICU to the system  | 201 status code with "CREATED"    | -- |
+
 
 
 
@@ -57,6 +59,7 @@ Once the main spring application (com.philips.alerttocare) has been run,Tomcat a
 
 
 
+
 ### MONITORING DEVICE-Management API
 | HTTP Mehtod | API URL        | Description                                                                | Success Response                                 | Failure Response  |
 |-------------|----------------|----------------------------------------------------------------------------|--------------------------------------------------|-------------------|
@@ -67,12 +70,14 @@ Once the main spring application (com.philips.alerttocare) has been run,Tomcat a
 
 
 
+
 ### BED & MONITORING DEVICE- mapping API
 | HTTP Mehtod | API URL        | Description                                                                | Success Response                                 | Failure Response  |
 |-------------|----------------|----------------------------------------------------------------------------|--------------------------------------------------|-------------------|
 | GET        | "/bed-device/allMaps"      |  Fetches list of all 1-1 mappings of beds and devices along with their status | 200 status code with "OK"    | -- |
 | POST        | "/bed-device/map"      |  This adds a new mapping of bed to device to the system  | 201 status code with "CREATED"    | -- |
 | PUT         | "/bed-device/map/{id}" | Updates the vital values of patient admitted to the device  and alerts accordingly  | 200 Status code 'OK' | 404 status code 'Not Found'     |
+
 
 
 
