@@ -37,7 +37,7 @@ Once the main spring application (com.philips.alerttocare) has been run,Tomcat a
 
 ## APIs Created
 
-When posting values via the API's for the first time, follow the same order mentioned below
+When posting values via the API's for the first time, follow the same order mentioned : 
 ICUs -> BEDs -> MONITORING DEVICEs -> BED & DEVICE MAPPINGs -> PATIENTs
 
 ### ICU-Management API
