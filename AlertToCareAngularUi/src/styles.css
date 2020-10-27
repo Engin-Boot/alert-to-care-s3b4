@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css" ;
+
+.footer {
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(54, 54, 235);
+    text-align: center;
+    color: white;
+}
+
+th {
+    background-color: rgb(179, 173, 173);
+}
+
+.space {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
