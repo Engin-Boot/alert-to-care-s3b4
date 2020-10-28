@@ -1,0 +1,15 @@
+<div class="col-md-6 offset-md-3">  
+
+    <h3 class="text-center space"> Add Bed </h3>
+    
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label> ICU ID </label>
+            <input type="text" class="form-control" id="icuId" 
+                [(ngModel)]="bedsub.icuId" name="icuId">
+        </div>
+        <button class="btn btn-success" type="submit"> Add ICU </button>
+    </form>
+    
+    
+    </div>

@@ -1,0 +1,23 @@
+<div class="col-md-6 offset-md-3">  
+
+    <h3 class="text-center space"> Add Monitor </h3>
+    
+    <form (ngSubmit) = "onSubmit()">
+        
+        <div class="form-group">
+            <label> Bed ID </label>
+            <input type="text" class="form-control" id="icuId" 
+                [(ngModel)]="monitorsub.bedId" name="icuId">
+        </div>
+
+        <div class="form-group">
+            <label> Device ID </label>
+            <input type="text" class="form-control" id="deviceID" 
+                [(ngModel)]="monitorsub.deviceID" name="deviceID">
+        </div>
+
+        <button class="btn btn-success" type="submit"> Add Monitor </button>
+    </form>
+    
+    
+    </div>

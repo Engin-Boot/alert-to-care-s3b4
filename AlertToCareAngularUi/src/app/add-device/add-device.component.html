@@ -1,0 +1,25 @@
+<div class="col-md-6 offset-md-3">  
+
+    <h3 class="text-center space"> Add Device </h3>
+    
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label> Device Tag </label>
+            <input type="text" class="form-control" id="deviceTag" 
+                [(ngModel)]="devicesub.deviceTag" name="deviceTag">
+        </div>
+        <div class="form-group">
+            <label> Device Name </label>
+            <input type="text" class="form-control" id="name" 
+                [(ngModel)]="devicesub.name" name="deviceTag">
+        </div>
+        <div class="form-group">
+            <label> Device Status </label>
+            <input type="text" class="form-control" id="status" 
+                [(ngModel)]="devicesub.status" name="status">
+        </div>
+        <button class="btn btn-success" type="submit"> Add Device </button>
+    </form>
+    
+    
+    </div>
