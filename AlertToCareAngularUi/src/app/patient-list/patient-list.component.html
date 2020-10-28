@@ -1,0 +1,24 @@
+<div class="col-md-9 offset-md-1">  
+<h3 class="text-center space"> Patient List </h3>
+<table class="table table-bordered text-center container">
+    <thead>
+        <tr>
+            <th> Patient ID </th>
+            <th> Name </th>
+            <th> Email </th>
+            <th> Gender </th>
+            <th> Bed ID </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let patient of patients" > 
+            <td> {{ patient.pid }} </td>
+            <td> {{ patient.name }} </td>
+            <td> {{ patient.email }} </td>
+            <td> {{ patient.gender }} </td>
+            <td> {{ patient.bedId }} </td>
+        </tr>
+    </tbody>
+</table> 
+
+

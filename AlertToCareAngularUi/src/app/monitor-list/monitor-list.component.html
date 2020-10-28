@@ -1,0 +1,47 @@
+
+<h3 class="text-center space"> Monitor List </h3>
+<table class="table table-bordered text-center table-striped">  
+    <thead>
+        <tr>
+            <th> ID </th>
+            <th> Bed ID </th>
+            <th> Bed Status </th>
+            <th> Patient ID </th>
+            <th> Device ID </th>
+            <th> Patient Name </th>
+            <th> SPO2 </th>
+            <th> Body Temperature </th>
+            <th> Respiration Rate </th>
+            <th> Message </th>
+            <th> Status </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let monitor of monitors" > 
+            <td> {{ monitor.id }} </td>
+            <td> {{ monitor.bedId }} </td>
+            <td> {{ monitor.bed.bedStatus }} </td>
+
+            <td *ngIf="(monitor.bed.patient); else elseBlock1">
+                {{ monitor.bed.patient.pid }}
+            </td>
+            <ng-template #elseBlock1> - </ng-template>
+            
+            <td> {{ monitor.deviceID }} </td>
+            
+            <td *ngIf="(monitor.bed.patient); else elseBlock2">
+                {{ monitor.bed.patient.name }}
+            </td>
+            <ng-template #elseBlock2> - </ng-template>
+
+            <td> {{ monitor.spo2 }} </td>
+            <td> {{ monitor.bodyTemperature }} </td>
+            <td> {{ monitor.respirationRate }} </td>
+
+            <td> {{ monitor.message }} </td>
+            <td> {{ monitor.status }} </td>
+        </tr>
+    </tbody>
+</table> 
+
+
