@@ -1,4 +1,4 @@
 export class IcuSub {
-    bedLimit : any ;
-    layoutInfo : any ;
+    bedLimit : number ;
+    layoutInfo : string ;
 }

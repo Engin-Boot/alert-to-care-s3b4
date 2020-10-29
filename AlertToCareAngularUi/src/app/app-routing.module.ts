@@ -6,12 +6,14 @@ import { AddIcuComponent } from './add-icu/add-icu.component';
 import { AddMonitorComponent } from './add-monitor/add-monitor.component';
 import { AddPatientComponent } from './add-patient/add-patient.component';
 import { BedListComponent } from './bed-list/bed-list.component';
+import { CheckVitalsComponent } from './check-vitals/check-vitals.component';
 import { DeviceListComponent } from './device-list/device-list.component';
 import { GetBedByIdComponent } from './get-bed-by-id/get-bed-by-id.component';
 import { HomeComponent } from './home/home.component';
 import { IcuListComponent } from './icu-list/icu-list.component';
 import { MonitorListComponent } from './monitor-list/monitor-list.component';
 import { PatientListComponent } from './patient-list/patient-list.component';
+import { UpdateVitalsComponent } from './update-vitals/update-vitals.component';
 
 const routes: Routes = [
   { path : 'geticus', component : IcuListComponent },
@@ -25,6 +27,8 @@ const routes: Routes = [
   { path : 'addmonitor', component : AddMonitorComponent },
   { path : 'getpatients', component : PatientListComponent },
   { path : 'addpatient', component : AddPatientComponent },
+  { path : 'updatevitals/:id', component : UpdateVitalsComponent },
+  { path : 'checkvitals', component : CheckVitalsComponent },
   { path : '', component : HomeComponent }
 ];
 

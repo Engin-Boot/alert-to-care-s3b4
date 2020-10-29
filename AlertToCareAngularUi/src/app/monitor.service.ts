@@ -19,8 +19,16 @@ export class MonitorService {
     return this.httpClient.get<Monitor["data"]>( `${this.baseUrl}` ) ;
   }
 
-  addBed( monitorsub : MonitorSub ) : Observable<any> {
+  addMonitor( monitorsub : MonitorSub ) : Observable<any> {
     return this.httpClient.post( `${this.baseUrl2}`, monitorsub ) ;
+  }
+
+  getMonitorById( id : number ) : Observable<Monitor> {
+    return this.httpClient.get<Monitor>( `${this.baseUrl2}/${id}` ) ;
+  }
+
+  updateMonitor( id : number, monitor : Monitor ) : Observable<Object> {
+    return this.httpClient.put( `${this.baseUrl2}/${id}`, monitor ) ;
   }
 
 }

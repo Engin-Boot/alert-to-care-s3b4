@@ -1,6 +1,4 @@
-export class MonitorSub {
-    bedId : number ;
-    deviceID : number ;
+export class UpdateVitals {
     status : string ;
     bodyTemperature : number ;
     respirationRate : number ;

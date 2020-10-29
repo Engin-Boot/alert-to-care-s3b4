@@ -15,6 +15,9 @@ import { MonitorListComponent } from './monitor-list/monitor-list.component';
 import { AddMonitorComponent } from './add-monitor/add-monitor.component';
 import { PatientListComponent } from './patient-list/patient-list.component';
 import { AddPatientComponent } from './add-patient/add-patient.component';
+import { CheckVitalsComponent } from './check-vitals/check-vitals.component';
+import { UpdateVitalsComponent } from './update-vitals/update-vitals.component';
+import { HomeComponent } from './home/home.component';
 // import { HomeComponent } from './home/home.component'
 
 @NgModule({
@@ -30,8 +33,10 @@ import { AddPatientComponent } from './add-patient/add-patient.component';
     MonitorListComponent,
     AddMonitorComponent,
     PatientListComponent,
-    AddPatientComponent
-    // HomeComponent
+    AddPatientComponent,
+    CheckVitalsComponent,
+    UpdateVitalsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

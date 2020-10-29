@@ -1,3 +1,3 @@
 export class BedSub {
-    icuId : any ;
+    icuId : number ;
 }
