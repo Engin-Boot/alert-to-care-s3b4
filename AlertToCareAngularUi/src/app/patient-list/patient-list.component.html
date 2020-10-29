@@ -1,6 +1,6 @@
 <div class="col-md-9 offset-md-1">  
 <h3 class="text-center space"> Patient List </h3>
-<table class="table table-bordered text-center container">
+<table class="table table-bordered text-center container table-striped">
     <thead>
         <tr>
             <th> Patient ID </th>
@@ -8,6 +8,7 @@
             <th> Email </th>
             <th> Gender </th>
             <th> Bed ID </th>
+            <th> Actions </th>
         </tr>
     </thead>
     <tbody>
@@ -17,6 +18,9 @@
             <td> {{ patient.email }} </td>
             <td> {{ patient.gender }} </td>
             <td> {{ patient.bedId }} </td>
+            <td>
+                <button (click) = "deletePatient(patient.pid)" class="btn btn-danger" > Delete </button>
+            </td>
         </tr>
     </tbody>
 </table> 

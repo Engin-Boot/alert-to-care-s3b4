@@ -24,4 +24,10 @@ export class PatientListComponent implements OnInit {
     }) ;
   }
 
+  deletePatient( pid : number ) {
+    this.patientService.deletePatient( pid ).subscribe( data => {
+      this.getPatients() ;
+    } )
+  }
+
 }
