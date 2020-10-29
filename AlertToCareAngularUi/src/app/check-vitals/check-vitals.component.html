@@ -1,0 +1,75 @@
+<!-- <meta http-equiv="refresh" content="5"/> -->
+
+<h3 class="text-center space"> Vitals Monitoring </h3>
+<table class="table table-bordered text-center ">  
+    <thead>
+        <tr>
+            <th> Bed ID </th>
+
+            <th> SPO2 </th>
+            <th> Body Temperature </th>
+            <th> Respiration Rate </th>
+            <th> Message </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <!-- <ng-container *ngIf="( monitors )" > -->
+        <tr *ngFor="let monitor of monitors" > 
+
+            <td>
+                <ng-container *ngIf="(monitor.bed.bedStatus=='OCCUPIED')">
+                    {{ monitor.bedId }} 
+                </ng-container> 
+            </td>
+            
+            <!-- <td *ngIf="(monitor.bed.patient); else elseBlock1">
+                {{ monitor.bed.patient.pid }}
+            </td>
+            <ng-template #elseBlock1> - </ng-template>
+            
+            <td> {{ monitor.deviceID }} </td>
+            
+            <td *ngIf="(monitor.bed.patient); else elseBlock2">
+                {{ monitor.bed.patient.name }}
+            </td>
+            <ng-template #elseBlock2> - </ng-template> -->
+
+            <td>
+                <ng-container *ngIf="(monitor.bed.bedStatus=='OCCUPIED')">
+                <div *ngIf="( monitor.spo2 < 90 ); else greencolor" >
+                    <span class="redcolor"> {{ monitor.spo2 }} </span>
+                </div>
+            </ng-container>
+            </td>
+            <ng-template #greencolor> <span class="greencolor"> {{ monitor.spo2 }} </span> </ng-template>
+
+            
+            <td>
+                <ng-container *ngIf="(monitor.bed.bedStatus=='OCCUPIED')">
+                <div *ngIf="( monitor.bodyTemperature > 99 ); else greencolor" >
+                    <span class="redcolor"> {{ monitor.bodyTemperature }} </span>
+                </div>
+            </ng-container>
+            </td>
+            <ng-template #greencolor> <span class="greencolor"> {{ monitor.bodyTemperature }} </span> </ng-template>
+
+            <td>
+                <ng-container *ngIf="(monitor.bed.bedStatus=='OCCUPIED')">
+                <div *ngIf="( monitor.respirationRate > 16 || monitor.respirationRate < 12 ); else greencolor" >
+                    <span class="redcolor"> {{ monitor.respirationRate }} </span>
+                </div>
+            </ng-container>
+            </td>
+            <ng-template #greencolor> <span class="greencolor"> {{ monitor.respirationRate }} </span> </ng-template>
+            
+            
+            <ng-container *ngIf="(monitor.bed.bedStatus=='OCCUPIED')">
+            <td> {{ monitor.message }} </td>
+            </ng-container>
+            
+        </tr>
+    </tbody>
+</table> 
+
+<!-- <button type="button" class="btn"> Sweet alert </button> -->
