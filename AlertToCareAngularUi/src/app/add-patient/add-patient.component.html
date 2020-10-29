@@ -9,10 +9,19 @@
             <input type="text" class="form-control" id="name" 
                 [(ngModel)]="patientsub.name" name="name">
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label> Email </label>
             <input type="text" class="form-control" id="email" 
                 [(ngModel)]="patientsub.email" name="email">
+        </div> -->
+        <div class="form-group">
+            <label for ="email">Email validate</label>
+              <input type="text" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email"name="email" ngModel [(ngModel)]="patientsub.email" #emailref="ngModel">
+              <div *ngIf="emailref.errors &&(emailref.touched || emailref.dirty)" class ="alert alert-danger">
+               <div [hidden]="!emailref.errors?.pattern">
+                 Please enter valid email
+               </div> 
+              </div> 
         </div>
         <div class="form-group">
             <label> Bed Id </label>

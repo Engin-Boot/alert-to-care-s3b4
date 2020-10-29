@@ -24,7 +24,10 @@ export class AddPatientComponent implements OnInit {
       console.log( "data----- "  + data ) ;
       this.goToPatientList() ;
     },
-    error => console.log( error )) ;
+    error =>  {
+      console.log( error ),
+      alert( error.error.message ) ;
+    }) ;
   }
 
   goToPatientList() {
