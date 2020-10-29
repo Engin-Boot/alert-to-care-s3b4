@@ -1,0 +1,30 @@
+<div class="col-md-6 offset-md-3">  
+
+    <h3 class="text-center space"> Update Vitals </h3>
+    
+    <form (ngSubmit) = "onSubmit()">
+        
+        <div class="form-group">
+            <label> SP02 </label>
+            <input type="text" class="form-control" id="icuId" 
+                [(ngModel)]="monitor.spo2" name="icuId">
+        </div>
+
+        <div class="form-group">
+            <label> Respiration Rate </label>
+            <input type="text" class="form-control" id="deviceID" 
+                [(ngModel)]="monitor.respirationRate" name="deviceID">
+        </div>
+
+        <div class="form-group">
+            <label> Body Temperature </label>
+            <input type="text" class="form-control" id="deviceID" 
+                [(ngModel)]="monitor.bodyTemperature" name="deviceID">
+        </div>
+
+        <button id="wow" name="wow" class="btn btn-success" type="submit"> update vitals </button>
+    </form>
+        <a class="adjust" href="http://localhost:4200/getmonitors"  id="wow" name="wow" > . </a>
+    
+    
+    </div>
