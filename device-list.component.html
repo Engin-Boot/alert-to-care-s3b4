@@ -1,0 +1,22 @@
+<div class="col-md-9 offset-md-1">  
+<h3 class="text-center space"> Device List </h3>
+<table class="table table-bordered text-center table-striped">
+    <thead>
+        <tr>
+            <th> Device ID </th>
+            <th> Device Tag </th>
+            <th> Device name </th>
+            <th> Device status </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let device of devices" > 
+            <td> {{ device.deviceId }} </td>
+            <td> {{ device.deviceTag }} </td>
+            <td> {{ device.name }} </td>
+            <td> {{ device.status }} </td>
+        </tr>
+    </tbody>
+</table> 
+
+
