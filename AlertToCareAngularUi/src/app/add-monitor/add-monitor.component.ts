@@ -20,7 +20,7 @@ export class AddMonitorComponent implements OnInit {
   }
 
   saveMonitor() {
-    this.monitorService.addBed( this.monitorsub ).subscribe( data=> {
+    this.monitorService.addMonitor( this.monitorsub ).subscribe( data=> {
       console.log( data ) ;
       this.goToMonitorList() ;  
     },
