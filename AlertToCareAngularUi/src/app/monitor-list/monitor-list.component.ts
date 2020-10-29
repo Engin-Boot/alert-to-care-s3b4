@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Monitor } from '../monitor';
 import { MonitorService } from '../monitor.service';
 
@@ -11,17 +12,24 @@ export class MonitorListComponent implements OnInit {
 
   monitors : Monitor ;
 
-  constructor( private monitorService : MonitorService ) { }
+  constructor( private monitorService : MonitorService,
+    private router : Router ) { }
+
+
 
   ngOnInit(): void {
-    this.getBeds() ;
+    this.getMonitors() ;
   }
 
-  getBeds() {
+  getMonitors() {
     this.monitorService.getMonitorList().subscribe(response=>{
       this.monitors = response.data ;
       console.log( this.monitors ) ;
     }) ;
+  }
+
+  updateVitals( id : number ) {
+    this.router.navigate( ['updatevitals', id] ) ;
   }
 
 }

@@ -12,8 +12,9 @@
             <th> SPO2 </th>
             <th> Body Temperature </th>
             <th> Respiration Rate </th>
+            <!-- <th> Status </th> -->
             <th> Message </th>
-            <th> Status </th>
+            <th> Actions </th>
         </tr>
     </thead>
     <tbody>
@@ -38,8 +39,11 @@
             <td> {{ monitor.bodyTemperature }} </td>
             <td> {{ monitor.respirationRate }} </td>
 
+            
             <td> {{ monitor.message }} </td>
-            <td> {{ monitor.status }} </td>
+            <td>
+                <button (click)="updateVitals(monitor.id)" class="btn btn-info"> Update </button>
+            </td>
         </tr>
     </tbody>
 </table> 
